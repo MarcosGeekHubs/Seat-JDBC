@@ -9,6 +9,7 @@ import java.sql.SQLException;
 public class Main {
     public static void main(String[] args) throws SQLException {
         System.out.println("Hello World !!");
+        System.exit(1);
 
         JavaMySQLBasic javaMySQLBasic = new JavaMySQLBasic();
         Connection conn = javaMySQLBasic.connectDatabase();
@@ -21,7 +22,6 @@ public class Main {
         new CreateTable(conn2);
         new DropTable(conn2);
 
-        System.exit(1);
         new DropDatabase(conn2);
 
         new Statement(conn2);
