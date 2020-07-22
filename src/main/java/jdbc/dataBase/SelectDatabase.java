@@ -16,7 +16,7 @@ public class SelectDatabase {
 
         try {
             this.connection = DriverManager.getConnection(
-                    "jdbc:mysql://127.0.0.1:33060/RDBMS",
+                    "jdbc:mysql://127.0.0.1:3306/rdbms",
                     "root",
                     "secret");
 

@@ -58,9 +58,9 @@ public class SystemManagement {
         System.out.flush();
 
         if (operatingSystem.contains("Windows")) {
-            Runtime.getRuntime().exec("cls");
+           // Runtime.getRuntime().exec("cls");
         } else {
-            Runtime.getRuntime().exec("clear");
+          //  Runtime.getRuntime().exec("clear");
         }
     }
 }

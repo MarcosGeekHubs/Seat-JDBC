@@ -1,9 +1,13 @@
 package jdbc.main;
 
 import jdbc.accountingAdvice.SystemManagement;
+import jdbc.dataBase.CreateDatabase;
 import jdbc.dataBase.SelectDatabase;
 import jdbc.dataBase.Statement;
 import jdbc.dataBase.Transaction;
+import jdbc.table.CreateTable;
+import jdbc.table.Delete;
+import jdbc.table.Select;
 
 import java.sql.Connection;
 import java.sql.SQLException;
@@ -16,7 +20,16 @@ public class Main {
         SelectDatabase selectDatabase = new SelectDatabase();
         Connection conn2 = selectDatabase.getConnection();
 
-        new SystemManagement(conn2);
+     //   new CreateDatabase(conn2);
+
+        new CreateTable(conn2);
+
+      //  new SystemManagement(conn2);
+
+        new Delete(conn2);
+
+        new Select(conn2);
+
         conn2.close();
 
         System.exit(1);
