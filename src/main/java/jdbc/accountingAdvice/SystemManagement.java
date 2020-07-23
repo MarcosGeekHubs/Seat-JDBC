@@ -15,11 +15,13 @@ public class SystemManagement {
         Scanner reader = new Scanner(System.in);
         int numero = 0;
 
-        System.out.println("Introduce números. El cero para salir");
-        System.out.println(" 1 - Crear Employee.");
-        System.out.println(" 2 - Introduce 2.");
 
         do {
+
+            System.out.println("Introduce números. El cero para salir");
+            System.out.println(" 1 - Crear Employee.");
+            System.out.println(" 2 - Introduce 2.");
+
             try {
                 numero = reader.nextInt();
 
