@@ -21,6 +21,7 @@ public class Main {
         Connection conn2 = selectDatabase.getConnection();
 
         new SystemManagement(conn2);
+        conn2.close();
 
         System.exit(1);
         // new CreateDatabase(conn2);
@@ -32,7 +33,6 @@ public class Main {
 
         // new Select(conn2);
 
-        conn2.close();
 
 
         /*JavaMySQLBasic javaMySQLBasic = new JavaMySQLBasic();
