@@ -20,19 +20,20 @@ public class Main {
         SelectDatabase selectDatabase = new SelectDatabase();
         Connection conn2 = selectDatabase.getConnection();
 
-     //   new CreateDatabase(conn2);
+        new SystemManagement(conn2);
 
-        new CreateTable(conn2);
+        System.exit(1);
+        // new CreateDatabase(conn2);
 
-      //  new SystemManagement(conn2);
+        // new CreateTable(conn2);
 
-        new Delete(conn2);
 
-        new Select(conn2);
+        //  new Delete(conn2);
+
+        // new Select(conn2);
 
         conn2.close();
 
-        System.exit(1);
 
         /*JavaMySQLBasic javaMySQLBasic = new JavaMySQLBasic();
         Connection conn = javaMySQLBasic.connectDatabase();
@@ -47,8 +48,7 @@ public class Main {
         Transaction transaction = new Transaction(conn2);
         transaction.normalTransaction();
         transaction.saveTransaction();
-    //    conn.close();
-
+        //    conn.close();
 
 
     }

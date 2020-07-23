@@ -25,10 +25,9 @@ public class InsertDatabase {
         } catch (SQLException exception) {
             conn.rollback();
             System.out.println("Error al rollback " + exception);
-
         }
 
-        System.out.println("Employee create " );
+        System.out.println("Employee created " );
     }
 
 

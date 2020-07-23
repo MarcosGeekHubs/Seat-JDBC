@@ -3,7 +3,6 @@ package jdbc.dataBase;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-
 public class CreateDatabase {
     public CreateDatabase(Connection conn) throws SQLException {
         try {
